@@ -1,0 +1,43 @@
+root = true
+
+[*]
+indent_style = space
+indent_size = 4
+
+[*.cs]
+tab_width = 4
+insert_final_newline = true
+
+# K&R newling styling
+csharp_new_line_before_catch = false
+csharp_new_line_before_else = false
+csharp_new_line_before_finally = false
+csharp_new_line_before_members_in_anonymous_types = false
+csharp_new_line_before_members_in_object_initializers = false
+csharp_new_line_before_open_brace = none
+csharp_new_line_between_query_expression_clauses = false
+
+# File-scoped namespaces
+dotnet_diagnostic.IDE0161.severity = error
+csharp_style_namespace_declarations = file_scoped:error
+
+csharp_style_expression_bodied_methods = true:suggestion
+
+# Non-caught style severities
+dotnet_diagnostic.CS1591.severity = suggestion # Missing XML comment
+
+# Build-caught style severities
+dotnet_diagnostic.IDE0040.severity = error # Add accessibility modifiers
+dotnet_diagnostic.IDE0065.severity = error # 'using' outside namespace
+dotnet_diagnostic.IDE0008.severity = none # Allow 'var'
+dotnet_diagnostic.IDE0011.severity = error # Force brace rules
+dotnet_diagnostic.IDE0058.severity = none # Ignore discarded values
+dotnet_diagnostic.IDE0032.severity = none # Use auto properties
+dotnet_diagnostic.CA2201.severity = error # Avoid using 'Exception'
+dotnet_diagnostic.CA1051.severity = suggestion # Do not declare visible instance fields
+dotnet_diagnostic.IDE0046.severity = suggestion # Block can be simplified
+# Style rules
+csharp_style_var_when_type_is_apparent = true
+csharp_style_var_elsewhere = true
+csharp_prefer_braces = false
+dotnet_style_prefer_auto_properties = false

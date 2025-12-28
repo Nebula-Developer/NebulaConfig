@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <PackageType>Template</PackageType>
+        <PackageId>NebulaDev.EditorConfig</PackageId>
+        <Version>1.0.0</Version>
+        <Authors>NebulaDev</Authors>
+        <Description>Opinionated .editorconfig by NebulaDev</Description>
+
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageProjectUrl>https://github.com/Nebula-Developer/NebulaConfig</PackageProjectUrl>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="README.md" Pack="true" PackagePath="." />
+    </ItemGroup>
+</Project>

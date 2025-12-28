@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "NebulaDev",
+    "classifications": ["EditorConfig", "Configuration"],
+    "identity": "NebulaDev.EditorConfig",
+    "name": "NebulaDev .editorconfig",
+    "description": "Opinionated .editorconfig by NebulaDev",
+    "shortName": "nebulaconfig",
+    "tags": {
+        "type": "item",
+        "language": "C#"
+    },
+    "sourceName": "NebulaConfig"
+}

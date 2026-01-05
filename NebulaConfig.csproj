@@ -3,16 +3,20 @@
         <TargetFramework>net9.0</TargetFramework>
         <PackageType>Template</PackageType>
         <PackageId>NebulaDev.EditorConfig</PackageId>
-        <Version>1.1.1</Version>
+        <Version>1.1.2</Version>
         <Authors>NebulaDev</Authors>
         <Description>Opinionated .editorconfig by NebulaDev</Description>
 
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageProjectUrl>https://github.com/Nebula-Developer/NebulaConfig</PackageProjectUrl>
+        <IncludeBuildOutput>false</IncludeBuildOutput>
+        <NoDefaultExcludes>true</NoDefaultExcludes>
+        <NoWarn>$(NoWarn);NU5128</NoWarn>
     </PropertyGroup>
 
     <ItemGroup>
-        <None Include="README.md" Pack="true" PackagePath="." />
+        <Content Include="NebulaConfig\**\*" Exclude="NebulaConfig\bin\**;NebulaConfig\obj\**" Pack="true" PackagePath="content" />
+        <None Include="README.md" Pack="true" PackagePath="" />
     </ItemGroup>
 </Project>
